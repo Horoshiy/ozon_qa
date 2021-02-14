@@ -1,4 +1,4 @@
-package tests;
+package ru.ozon.tests;
 
 import com.codeborne.selenide.Condition;
 import io.qameta.allure.Feature;
@@ -12,7 +12,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 @Tag("web")
 @Feature("Main Page content")
-public class MainPageTests {
+public class MainPageTests extends TestBase {
 
     private void openMainPage() {
         open("http://ozon.ru");
