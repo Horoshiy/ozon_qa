@@ -14,15 +14,11 @@ import static com.codeborne.selenide.Selenide.open;
 @Feature("Main Page content")
 public class MainPageTests extends TestBase {
 
-    private void openMainPage() {
-        open("http://ozon.ru");
-    }
-
     @Test
     @Story("Check for loading and errors")
     @DisplayName("Main page is loading")
     void ozonPictureMainPageTest() {
-        openMainPage();
+        open("");
         $("header img").shouldHave(Condition.attribute("alt", "Ozon"));
     }
 }
